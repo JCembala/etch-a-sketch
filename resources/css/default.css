@@ -5,3 +5,14 @@ html {
 *, *::after, *::before {
     box-sizing: inherit;
 }
+
+.pad {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    max-width: 960px;
+    min-width: 450px;
+}
+
+.pad__square {
+    text-align: center;
+}
