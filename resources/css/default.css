@@ -20,6 +20,13 @@ html {
 
 .pad__square {
     text-align: center;
+    background-color: white;
+    width: 8px;
+    height: 8px;
+}
+
+.pad__square--black {
+    background-color: black;
 }
 
 .reset {

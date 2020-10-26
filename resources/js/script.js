@@ -6,8 +6,10 @@ function createPad(size) {
 
     for (let i = 0; i < squares.length; i++) {
         squares[i] = document.createElement('div');
-        squares[i].innerText = i + 1;
         squares[i].classList.add('pad__square')
+        squares[i].addEventListener('mouseenter', () => {
+            squares[i].classList.add('pad__square--black')
+        })
         pad.appendChild(squares[i]);
     }
     
