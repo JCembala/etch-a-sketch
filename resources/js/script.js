@@ -1,4 +1,4 @@
-const container = document.querySelector('.pad');
+const pad = document.querySelector('.pad');
 
 function createPad(size) {
 
@@ -8,8 +8,10 @@ function createPad(size) {
         squares[i] = document.createElement('div');
         squares[i].innerText = i + 1;
         squares[i].classList.add('pad__square')
-        container.appendChild(squares[i]);
+        pad.appendChild(squares[i]);
     }
+    
+    pad.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 }
 
-createPad(16);
+createPad(32);
