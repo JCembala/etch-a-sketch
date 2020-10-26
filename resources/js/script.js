@@ -21,9 +21,15 @@ function createPad(size) {
 }
 
 function resetPad() {
-    squares.forEach(element => {
-        element.classList.remove('pad__square--black');
-    });
+    let size = resetPadSize.value;
+    clearPad();
+    createPad(size);
+}
+
+function clearPad() {
+    while(pad.firstChild){
+        pad.removeChild(pad.lastChild);
+    }
 }
 
 createPad(32);
