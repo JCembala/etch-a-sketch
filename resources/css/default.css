@@ -15,7 +15,7 @@ html {
 .pad {
     display: grid;
     max-width: 960px;
-    min-width: 450px;
+    border: black solid 1px;
 }
 
 .pad__square {
