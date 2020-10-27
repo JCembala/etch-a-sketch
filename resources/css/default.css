@@ -32,9 +32,26 @@ html {
 
 .reset {
     display: flex;
-    flex-direction: row;
-    justify-items: center;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.reset__container {
+    display: flex;
+}
+
+.reset__description {
+    margin: auto;
+    padding: 0;
+}
+
+.reset__size {
+    margin: 0 0 0 10px;
+    padding: 0 0 0 5px;
+    width: 55px;
+}
+
+.reset__button {
+    margin: auto;
 }
 
 .heading {
