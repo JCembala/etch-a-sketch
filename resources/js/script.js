@@ -22,11 +22,11 @@ function createPad(size) {
 
 function resetPad() {
     let size = resetPadSize.value;
-    clearPad();
+    removePad();
     createPad(size);
 }
 
-function clearPad() {
+function removePad() {
     while(pad.firstChild){
         pad.removeChild(pad.lastChild);
     }
