@@ -37,6 +37,7 @@ html {
 
 .reset__container {
     display: flex;
+    margin: 0 0 10px 0;
 }
 
 .reset__description {
@@ -55,6 +56,7 @@ html {
 }
 
 .heading {
+    margin: 20px 0 0 0;
 }
 
 .heading__main {
@@ -63,5 +65,8 @@ html {
 }
 
 .footer__copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     text-align: center;
 }
